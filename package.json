@@ -1,0 +1,20 @@
+{
+  "name": "prodrender",
+  "version": "0.0.1",
+  "description": "The program automates the process of loading a list of web pages, to navigate a list of web pages, capture screenshots, extract html and text content, and save any wanted images found on the page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarmo Vuorinen",
+  "license": "ISC",
+  "dependencies": {
+    "@cliqz/adblocker-puppeteer": "^1.26.12",
+    "@duckduckgo/autoconsent": "^6.6.0",
+    "check-disk-space": "^3.4.0",
+    "cross-fetch": "^4.0.0",
+    "puppeteer": "^21.6.1",
+    "semver": "^7.5.4",
+    "winston": "^3.11.0"
+  }
+}

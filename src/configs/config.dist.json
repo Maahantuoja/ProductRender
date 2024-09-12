@@ -1,0 +1,62 @@
+{
+    "files": {
+        "consolidatedDataJson": "/consolidatedData.json",
+        "dataJson": "/data.json"
+    },
+    "paths": {
+        "addon": "../../node_modules/@duckduckgo/autoconsent/dist/addon-mv3",
+        "appLog": "../../logs",
+        "outputData": "./data",
+        "outputDriver": "d:",
+        "outputFolder": "../output",
+        "outputImages": "./images"
+    },
+    "patterns": {
+        "excludedPatterns": [
+            ".*banner.*",
+            ".*data.*",
+            ".*footer.*",
+            ".*header.*",
+            ".*log.*",
+            ".*logo.*",
+            ".*searchbox.*"
+        ],
+        "cookieTextPatterns": "^(Hyväksy|Hyväksy kaikki|Hyväksy kaikki evästeet|Salli|Salli kaikki|Salli kaikki evästeet|Accept|Accept all|Accept all cookies|Allow|Allow all|Allow all cookies)$",
+        "otherTextPatterns": "^(Ok|Close|Continue|Sulje|x|×|X)$"
+    },
+    "selectors": {
+        "cookieSelector": "a[id*=cookie], a[class*=cookie], button[id*=cookie], button[class*=cookie]",
+        "customSelector": "#proceed_shop_container button, button[class*=ModalClose], button[class*=recommendation-modal__button]",
+        "defaultSelector": "a, button"
+    },
+    "utils": {
+        "updater": {
+            "autoUpdate": false,
+            "cmdOutdated": "npm outdated --json",
+            "cmdUpdate": "npm update"
+        }
+    },
+    "variables": {
+        "bits": 1024,
+        "captureDelay": 0,
+        "cookieTimeOut": 2000,
+        "jsonIndentation": 4,
+        "minimumPercentage": 0.20,
+        "puppeteerMode": false,
+        "responseStatusCode": 200,
+        "rounded": 2,
+        "scrollDelay": 1000,
+        "sliceAmount": 7,
+        "timeOutDelay": 10000,
+        "toGB": 3,
+        "toMB": 2,
+        "viewportHeight": 1200,
+        "viewportWidth": 1500
+    },
+    "webPages": [
+        "https://emp.fi",
+        "https://pahis.fi",
+        "https://disturb.fi",
+        "https://rudecru.com"
+    ]
+}
